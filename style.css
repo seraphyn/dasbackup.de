@@ -8,27 +8,47 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Schild-Stil */
 .schild {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border: 5px solid black;
-    padding: 20px;
+    width: 80%;
+    height: 80%;
     background-color: white;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    max-width: 80%;
 }
 
+/* Allgemeiner Stil für die Zeilen */
 .zeile {
-    font-size: 2.5rem;
+    font-size: calc(5vw + 1rem); /* Dynamische Schriftgröße basierend auf Bildschirmbreite */
     font-weight: bold;
+    width: 100%;
+    text-align: center;
     padding: 10px 0;
 }
 
+/* Stil für die erste Zeile */
 .erste-zeile {
     color: black;
     background-color: white;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
+/* Stil für die zweite Zeile */
 .zweite-zeile {
     color: white;
     background-color: black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
